@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ce4a810f5ff23b554b280e2c1f3d0620
+guid: 3f41890efe9f9e641a21e72bdcc21897
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Upheaval TT (BRK)
+  - Press Start 2P
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

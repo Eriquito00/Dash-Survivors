@@ -37,8 +37,6 @@ public class Player : MonoBehaviour
         maxHealth = 100;
         panelPowerup.SetActive(false);
         panelGameOver.SetActive(false);
-        flechaGameOver.SetActive(false);
-        panelPause.SetActive(false);
         PuntoAtaqueN2.cooldownBala = 1.5f;
         PuntoAtaqueN3.cooldownBala = 1.5f;
         PuntoAtaque.cooldownBala = 0.75f;
@@ -66,14 +64,7 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Time.timeScale = 0f;
-            panelPause.SetActive(true);
             flechaPause.SetActive(true);
-        }
-        if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.X) || Input.GetKeyDown(KeyCode.Z))
-        {
-            flechaPause.SetActive(false);
-            panelPause.SetActive(false);
-            Time.timeScale = 1f;
         }
     }
     void OnCollisionEnter2D (Collision2D collision)

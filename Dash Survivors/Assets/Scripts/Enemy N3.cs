@@ -46,11 +46,6 @@ public class EnemyN3 : MonoBehaviour
                 StopMoving(); //Deja de moverse
             }
 
-            // Make the child object look at the player
-            Vector3 direction = player.position - childTransform.position;
-            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90; // Subtract 90 from the angle
-            childTransform.rotation = Quaternion.Euler(0f, 0f, angle);
-
             // Check if the player has fired
             if (PuntoAtaque.disparar)
             {
