@@ -29,11 +29,6 @@ public class UI : MonoBehaviour
     }
     void TextUpdate()
     {
-        Counter1.text =  EnemyN1.killslvl1.ToString();
-        Counter2.text =  EnemyN2.killslvl2.ToString();
-        Counter3.text =  EnemyN3.killslvl3.ToString();
-        PowerUp1.text =  Player.powerUp1.ToString();
-        PowerUp2.text =  Player.powerUp2.ToString();
         WeaponLevel.text =  Player.weaponLevel.ToString();
         TotalEnemigos.text = numeroTotalEnemigos.ToString();
         TotalEnemigosMax.text = numeroTotalEnemigosMax.ToString();
