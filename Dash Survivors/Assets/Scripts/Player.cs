@@ -13,9 +13,6 @@ public class Player : MonoBehaviour
     public static float nuevoDaño;
     public GameObject panelPowerup;
     public GameObject panelGameOver;
-    public GameObject flechaGameOver;
-    public GameObject flechaPause;
-    public GameObject panelPause;
     public static int powerUp1;
     public static int powerUp2;
 
@@ -37,15 +34,12 @@ public class Player : MonoBehaviour
         maxHealth = 100;
         panelPowerup.SetActive(false);
         panelGameOver.SetActive(false);
-        flechaGameOver.SetActive(false);
-        panelPause.SetActive(false);
         PuntoAtaqueN2.cooldownBala = 1.5f;
         PuntoAtaqueN3.cooldownBala = 1.5f;
         PuntoAtaque.cooldownBala = 0.75f;
         EnemyN1.velocidadE = 2.5f;
         EnemyN2.velocidadE = 2f;
         EnemyN3.moveSpeed = 3.25f;
-
     }
 
     // Update is called once per frame
@@ -66,14 +60,6 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Time.timeScale = 0f;
-            panelPause.SetActive(true);
-            flechaPause.SetActive(true);
-        }
-        if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.X) || Input.GetKeyDown(KeyCode.Z))
-        {
-            flechaPause.SetActive(false);
-            panelPause.SetActive(false);
-            Time.timeScale = 1f;
         }
     }
     void OnCollisionEnter2D (Collision2D collision)
@@ -84,7 +70,6 @@ public class Player : MonoBehaviour
             if (vidaP <= 0)
             {
                 panelGameOver.SetActive(true);
-                flechaGameOver.SetActive(true);
                 Destroy(this.gameObject);
             }
         }

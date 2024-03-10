@@ -27,7 +27,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.25, y: 1.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 292686486210185245}
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1600167300, guid: c187596ba48f1ef469f72f84cb7af83f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0d93794483aa7f942b558cd1a4267a0a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -340,7 +340,7 @@ MonoBehaviour:
   powerUp1: {fileID: 2901236947320528776, guid: 3515a558a0fb8764fbd4f07d99225efc, type: 3}
   powerUp2: {fileID: 4390402170071480156, guid: e23fa344872845d428307fc349d04688, type: 3}
   childTransform: {fileID: 5852271479410315523}
+  vidaInicial: 10
   healthBar: {fileID: 9081138218166362590}
   healthBarTransform: {fileID: 4714198328721430991}
   maxHealth: 10
-  vidaInicial: 10
