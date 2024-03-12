@@ -15,8 +15,11 @@ public class Player : MonoBehaviour
     public GameObject panelGameOver;
     public static int powerUp1;
     public static int powerUp2;
-
     public static int weaponLevel;
+    public AudioClip muerteplayer;
+    public AudioClip muerte1;
+    public AudioClip muerte2;
+    public AudioClip muerte3;
     // Start is called before the first frame update
     void Start()
     {
@@ -57,10 +60,6 @@ public class Player : MonoBehaviour
         {
             vidaP = 100;
         }
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            Time.timeScale = 0f;
-        }
     }
     void OnCollisionEnter2D (Collision2D collision)
     {
@@ -70,6 +69,7 @@ public class Player : MonoBehaviour
             if (vidaP <= 0)
             {
                 panelGameOver.SetActive(true);
+                AudioSource.PlayClipAtPoint(muerteplayer, transform.position);
                 Destroy(this.gameObject);
             }
         }
@@ -88,14 +88,17 @@ public class Player : MonoBehaviour
         {
             if (enemigo.GetComponent<EnemyN1>())
             {
+                AudioSource.PlayClipAtPoint(muerte1, transform.position);
                 EnemyN1.killslvl1++;
             }
             else if (enemigo.GetComponent<EnemyN2>())
             {
+                AudioSource.PlayClipAtPoint(muerte2, transform.position);
                 EnemyN2.killslvl2++;
             }
             else if (enemigo.GetComponent<EnemyN3>())
             {
+                AudioSource.PlayClipAtPoint(muerte3, transform.position);
                 EnemyN3.killslvl3++;
             }
             Destroy(enemigo);

@@ -17,6 +17,8 @@ public class EnemyN2 : MonoBehaviour
     public float vidaInicial = 5;
     public static float incremento;
     private float dañoP = 1f;
+    public AudioClip muerte;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,6 +45,7 @@ public class EnemyN2 : MonoBehaviour
         }
         if (vidaEn1 <= 0)
         {
+        AudioSource.PlayClipAtPoint(muerte, transform.position);
         Destroy(this.gameObject);
         killslvl2++;
         int randomNumero = Random.Range(1, 11);

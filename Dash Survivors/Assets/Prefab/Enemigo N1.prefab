@@ -252,3 +252,4 @@ MonoBehaviour:
   healthBar: {fileID: 9015945685544069541}
   healthBarTransform: {fileID: 8854400968229897463}
   maxHealth: 3
+  muerte: {fileID: 8300000, guid: c469e4ae237a58c4b99efa8c4f407e29, type: 3}

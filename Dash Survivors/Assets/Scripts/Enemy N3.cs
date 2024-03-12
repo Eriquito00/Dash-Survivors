@@ -25,6 +25,7 @@ public class EnemyN3 : MonoBehaviour
     public Transform healthBarTransform; // Add this line
 
     public int maxHealth = 10; // Add this line
+    public AudioClip muerte;
 
     void Start()
     {
@@ -82,6 +83,7 @@ public class EnemyN3 : MonoBehaviour
         if (health <= 0)
         {
             // Destroy the enemy
+            AudioSource.PlayClipAtPoint(muerte, transform.position);
             Destroy(gameObject);
             killslvl3++;
             int randomNumero = Random.Range(1, 11);
