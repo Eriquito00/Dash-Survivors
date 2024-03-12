@@ -20,6 +20,8 @@ public class EnemyN1 : MonoBehaviour
     public SpriteRenderer healthBar;
     public Transform healthBarTransform;
     public int maxHealth = 3;
+    public AudioClip muerte;
+
 
     // Start is called before the first frame update
     void Start()
@@ -46,6 +48,7 @@ public class EnemyN1 : MonoBehaviour
         }
         if (vidaEn1 <= 0)
         {
+        AudioSource.PlayClipAtPoint(muerte, transform.position);
         Destroy(this.gameObject);
         killslvl1++;
         int randomNumero = Random.Range(1, 11);

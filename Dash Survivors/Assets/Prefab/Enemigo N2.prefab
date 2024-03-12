@@ -299,3 +299,4 @@ MonoBehaviour:
   powerUp1: {fileID: 2901236947320528776, guid: 3515a558a0fb8764fbd4f07d99225efc, type: 3}
   powerUp2: {fileID: 4390402170071480156, guid: e23fa344872845d428307fc349d04688, type: 3}
   vidaInicial: 5
+  muerte: {fileID: 8300000, guid: e36f0d3197ee6914caeb832c6501989d, type: 3}
