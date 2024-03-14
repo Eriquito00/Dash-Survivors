@@ -20,6 +20,8 @@ public class Player : MonoBehaviour
     public AudioClip muerte1;
     public AudioClip muerte2;
     public AudioClip muerte3;
+    public AudioClip musicaMenu;
+    private AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
@@ -43,6 +45,14 @@ public class Player : MonoBehaviour
         EnemyN1.velocidadE = 2.5f;
         EnemyN2.velocidadE = 2f;
         EnemyN3.moveSpeed = 3.25f;
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+        audioSource.clip = musicaMenu;
+        audioSource.volume = 0.05f;
+        ReproducirMusica();
     }
 
     // Update is called once per frame
@@ -59,6 +69,10 @@ public class Player : MonoBehaviour
         if (vidaP >= 100)
         {
             vidaP = 100;
+        }
+        if (!audioSource.isPlaying)
+        {
+            ReproducirMusica();
         }
     }
     void OnCollisionEnter2D (Collision2D collision)
@@ -104,6 +118,15 @@ public class Player : MonoBehaviour
             Destroy(enemigo);
         }
         Destroy(collision.gameObject);
+        }
+    }
+    void ReproducirMusica()
+    {
+        // Verificar si la música no se está reproduciendo
+        if (!audioSource.isPlaying)
+        {
+            // Reproducir la música
+            audioSource.Play();
         }
     }
 }
