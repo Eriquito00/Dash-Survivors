@@ -7928,6 +7928,7 @@ MonoBehaviour:
   muerte1: {fileID: 8300000, guid: c469e4ae237a58c4b99efa8c4f407e29, type: 3}
   muerte2: {fileID: 8300000, guid: e36f0d3197ee6914caeb832c6501989d, type: 3}
   muerte3: {fileID: 8300000, guid: 41279cc4ec86c5443a61147f8f5c3614, type: 3}
+  musicaMenu: {fileID: 8300000, guid: cd2fb884a9872974da488fe80d76a71e, type: 3}
 --- !u!50 &1803491663
 Rigidbody2D:
   serializedVersion: 4
