@@ -23,7 +23,7 @@ public class Spawn : MonoBehaviour
             GameObject randomEnemyPrefab;
 
             // if generationCount is 3 or more, spawn any enemy prefab
-            if (generationCount >= 7 && EnemyN1.killslvl1 >= 50 && EnemyN2.killslvl2 >= 10)
+            if (generationCount >= 5)
             {
                 randomEnemyPrefab = enemyPrefabs[Random.Range(0, 3)];
             }
