@@ -51,7 +51,7 @@ public class Player : MonoBehaviour
             audioSource = gameObject.AddComponent<AudioSource>();
         }
         audioSource.clip = musicaMenu;
-        audioSource.volume = 0.05f;
+        audioSource.volume = 0.005f;
         ReproducirMusica();
     }
 
