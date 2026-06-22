@@ -4,11 +4,11 @@
 
 - Inspirado en Geometry Dash.
 
-![Captura de pantalla del menú desplegable Code mostrando la opción Download ZIP](https://raw.githubusercontent.com/Eriquito00/Eriquito00/main/img/dashsurvivor.png)
+![Captura de pantalla del menú desplegable Code mostrando la opción Download ZIP](./img/dashsurvivor.png)
 
 ---
 
 ## Tecnologías utilizadas
 
-![C# logo](https://raw.githubusercontent.com/Eriquito00/Eriquito00/main/img/c-sharp.png)
-![Unity logo](https://raw.githubusercontent.com/Eriquito00/Eriquito00/main/img/unity.png)
+![C# logo](./img/c-sharp.png)
+![Unity logo](./img/unity.png)
